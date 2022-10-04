@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_orange"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/dela_gothic_one"
+        android:text="Time: 15"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:text="Score: 0"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/scoreText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeText">
+
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:onClick="increaseScore"
+            android:layout_margin="7dp"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:srcCompat="@drawable/darwin1" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_margin="7dp"
+            android:onClick="increaseScore"
+            app:layout_column="1"
+            app:layout_row="0"
+            app:srcCompat="@drawable/darwin2" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:onClick="increaseScore"
+            android:layout_margin="7dp"
+            android:padding="10dp"
+            app:layout_column="2"
+            app:layout_row="0"
+            app:srcCompat="@drawable/darwin3" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:onClick="increaseScore"
+            android:layout_margin="7dp"
+            android:padding="10dp"
+            app:layout_column="0"
+            app:layout_row="1"
+            app:srcCompat="@drawable/darwin4" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:layout_margin="7dp"
+            android:onClick="increaseScore"
+            app:layout_column="1"
+            app:layout_row="1"
+            app:srcCompat="@drawable/darwin5" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:onClick="increaseScore"
+            android:layout_margin="7dp"
+            app:layout_column="2"
+            app:layout_row="1"
+            app:srcCompat="@drawable/darwin6" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:onClick="increaseScore"
+            android:layout_margin="7dp"
+            app:layout_column="0"
+            app:layout_row="2"
+            app:srcCompat="@drawable/darwin7" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:onClick="increaseScore"
+            android:layout_margin="7dp"
+            app:layout_column="1"
+            app:layout_row="2"
+            app:srcCompat="@drawable/darwin8" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:padding="10dp"
+            android:onClick="increaseScore"
+            android:layout_margin="7dp"
+            app:layout_column="2"
+            app:layout_row="2"
+            app:srcCompat="@drawable/darwin9" />
+
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
